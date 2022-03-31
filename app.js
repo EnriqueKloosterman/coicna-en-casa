@@ -4,7 +4,7 @@ const expressLayouts = require('express-ejs-layouts');
 require('dotenv').config();
 require('./src/database/config')
 
-const PORT = process.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 
 const app = express();
 
@@ -32,6 +32,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.listen(PORT, () => {
-    console.log(`aplicacion corriendo de 10 en el puerto ${PORT}`)
+app.listen(port, () => {
+    console.log(`aplicacion corriendo de 10 en el puerto ${port}`)
 });

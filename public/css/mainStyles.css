@@ -47,6 +47,12 @@ footer{
     color: whitesmoke;
     background-color: rgb(34, 34, 34);
 }
+footer i {
+    color: whitesmoke;
+    font-size: 3rem;
+    margin: 0 30px;
+
+}
 
 /* receta */
 .vinculo a{
