@@ -1,0 +1,44 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><%- recipe.name %></li>
+    </ol>
+</nav>
+
+<% if(recipe != null) { %> 
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <img src="/images/recipes/<%- recipe.image %> " alt="imagen de <%- recipe.image %>" class="img-fluid sticky-top" style="top: 20px;" loading="lazy">
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="row">
+                <div class="col-12">
+                    <h2><%- recipe.name %> </h2>
+                </div>
+                <div class="col-12 mb-4"><i class="bi bi-tag"><%- recipe.category %> </i></div>
+                <div class="col-12" style="white-space: pre-lime">
+                    <h4>Instrucciones</h4>
+                    <% recipe.description.forEach(element => { %>
+                        <p class="mb-2"><%-element %> </p>
+                    <% }) %>
+                    
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12">
+                    <h4>Ingredientes</h4>
+                    <ul class="list-group list-groupflush">
+                        <% recipe.ingredients.forEach(element => { %>
+                            <li class="list-group-item">
+                                <%= element %> 
+                            </li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-5 text-center vinculo">
+                <a href="<%- recipe.email %>"><%- recipe.email %> </a>
+            </div>
+        </div>
+    </div>
+<% } %>

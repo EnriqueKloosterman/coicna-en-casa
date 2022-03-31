@@ -1,0 +1,58 @@
+:root {
+    --bs-font-sans-serif: 'Rubik', sans-serif
+}
+
+body {
+    background-image: url("/images/i-like-food.svg");
+    background-color: rgb(240, 235, 229);
+}
+.container-xxl {
+    max-width: 1530px;
+}
+a {
+    color: var(--bs-dark);
+}
+
+
+/* Trarjeta categoria */
+.category-link {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 250ms all;
+}
+
+.category-link:hover{
+    transform: scale(1.1);
+}
+.category-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    overflow: hidden;
+    border-radius: 5px;    
+}
+.category-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.category-img-lg {
+    height: 330px;
+}
+
+footer{
+    color: whitesmoke;
+    background-color: rgb(34, 34, 34);
+}
+
+/* receta */
+.vinculo a{
+    text-decoration: none;
+}
+
+.btn{
+    border-radius: 4px;
+}
